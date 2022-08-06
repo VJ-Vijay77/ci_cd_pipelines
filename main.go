@@ -1,13 +1,7 @@
 package main
 
-import (
-	"fmt"
+import "fmt"
 
-	"github.com/VJ-Vijay77/cicd/response"
-
-)
-
-
-func main(){
-	fmt.Println(response.Greet())
+func main() {
+	fmt.Println("Hello World!!")
 }
