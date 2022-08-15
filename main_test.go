@@ -26,5 +26,17 @@ func TestMain(t *testing.T) {
 	t.Errorf("\n\nWanted - %s \nGot - %s\n\n",expected,output4)
  }
 
+ output5 := SomeFunc(10,4)
+ expected5 := TstFunc(10,4)
+ if output5 != expected5 {
+	t.Errorf("\n\nWanted - %d \nGot - %d\n\n",expected5,output5)
+ }
 
+}
+
+func TstFunc(a int,b int)int{
+	k := a + b
+	k = k + 2
+ 	q := k/2
+	return q  
 }

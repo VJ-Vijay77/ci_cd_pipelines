@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	output := Greet()
-	//sfdda
+	
 	fmt.Println(output)
 	AddingTwoNumbers := Add(4,5)
 	fmt.Println(AddingTwoNumbers)
@@ -14,6 +14,11 @@ func main() {
 
 	AddTailToString := Tail("sample")
 	fmt.Println(AddTailToString)
+
+	OutputofFunc:= SomeFunc(10,5)
+	fmt.Println(OutputofFunc)
+
+
 }
 
 func Tail(s string) string {
@@ -34,4 +39,11 @@ func Substract(a int,b int) int{
 
 func Greet() string {
 	return "Hello test"
+}
+
+func SomeFunc(a int,b int)int {
+	k := a + b
+	k = k + 2
+ 	q := k/2
+	return q  
 }

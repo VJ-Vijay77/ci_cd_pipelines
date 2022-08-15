@@ -1,4 +1,4 @@
-name: Simple Job
+name: Hello World
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   Hello:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Hello World!
         run: echo "Hello World"
