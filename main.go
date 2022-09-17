@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	//pipelines
 	output := Greet()
 	
 	fmt.Println(output)
